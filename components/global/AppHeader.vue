@@ -6,15 +6,15 @@
       <div class="search-container">
         <input
           type="text"
-          class="space"
+          class="space border-left"
           placeholder="Search for events near you ....."
         />
-        <button class="search space">search</button>
+        <button class="search">search</button>
       </div>
 
       <div class="account-container">
-        <a href="/login" class="login">Login</a>
-        <a href="/signup" class="sign"> Sign up</a>
+        <nuxt-link to="/login" class="login">Login</nuxt-link>
+        <nuxt-Link to="/signup" class="sign">Sign up</nuxt-Link>
       </div>
     </div>
 
@@ -36,7 +36,7 @@
 
 .nav{
   width: 100%;
-  height: 150px;
+  height: 100px;
   background: rgb(255, 255, 255);
   padding-top: 1.5rem;
   font-family: 'Oswald', sans-serif;
@@ -52,7 +52,7 @@
 }
 
 .active{
-  padding: 0.7rem 2rem;
+  padding: 0.3rem 1rem;
   border: 1px #2680EB  solid;
   border-radius: 0.3rem;
   color: #2680EB;
@@ -64,21 +64,22 @@
  
 input{
   width:28rem;
-  padding: 0.8rem 2rem;
-   border-radius: 1.5rem;
-   border: 2px rgb(170, 170, 170) solid;
+  padding: 0.5rem 0.8rem;
+   border: 1px rgb(170, 170, 170) solid;
    outline: none;
    font-family: 'Montserrat', sans-serif;
-
+   border-radius: 1.5rem;
+ 
 }
 
 .search{
-  padding: 0.7rem 2rem;
-  border: none;
+  padding: 0.4rem 0.5rem;
+   border:none;
   border-radius: 1.5rem;
+  margin-left: 1rem;
   background: #2680EB;
   color: white;
-  width: 10rem;
+  width: 6rem;
   font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -91,9 +92,6 @@ input{
   justify-content: space-around;
 }
 
-.space{
-  margin-left: 2rem;
-}
 
 
 li{
@@ -110,7 +108,7 @@ a{
 
 
 .sign{
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 1rem;
   border: none;
   color: white;
   background: #C80962;
@@ -123,7 +121,7 @@ a{
 }
 
 .login{
-  padding: 0.6rem 2rem;
+  padding: 0.4rem 1.5rem;
   background: none;
   border: 2px #2680EB solid;
   color: #2680EB;
@@ -137,9 +135,9 @@ a{
 
 
 .logo{
-  margin-top: -30px;
-  width: 120px;
-  height: 120px;
+  margin-top: -20px;
+  width: 80px;
+  height: 80px;
   background: url("~/assets/photos/mylogo.png");
   background-position: center;
   background-size: cover;
@@ -147,7 +145,7 @@ a{
 }
 
 .second-nav{
-
-  padding-left: 8rem;
+margin-top: -0.8rem;
+  padding-left:12rem;
 }
 </style>

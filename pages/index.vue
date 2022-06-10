@@ -1,7 +1,4 @@
 
-
-
-
 <template>
   <div class="home">
     <GlobalAppHeader />
@@ -15,15 +12,16 @@
   </div>
 </template>
 
+
+
 <style scoped>
 .slider{
   width: 100%;
-  height: 30rem;
+  height: 25rem;
   background: url(~/assets/photos/image1.jpg);
   background-position: cover;
   background-size: cover;
-  
-  margin-top:160px;
+  margin-top:120px;
    position: relative;
   
  

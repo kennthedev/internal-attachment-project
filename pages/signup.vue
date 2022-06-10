@@ -2,6 +2,11 @@
 
 <template>
   <div class="back">
+    <nuxt-link to="/"
+      ><div class="logo">
+        <img src="~/assets/photos/logo2.png" alt="" class="log" /></div
+    ></nuxt-link>
+
     <div class="form-container">
       <h2>Create an account</h2>
       <form action="">
@@ -20,8 +25,9 @@
           <input type="text" required />
         </div>
       </form>
-
-      <button class="btn-sign">Sign Up</button>
+      <div class="btn-container">
+        <button class="btn-sign">Sign Up</button>
+      </div>
 
       <div class="signin">
         <p>Already have an account?</p>
@@ -32,22 +38,33 @@
 </template>
 
 <style scoped>
-img {
-  margin: 0;
+
+.log{
+width: 100%;
+height: 100%;
+}
+
+
+.logo{
+   width: 80px;
+  height: 90px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  cursor: pointer;
 }
 
 
 .form-container {
   max-width: 28rem;
-  background: rgba(255, 255, 255, 0.438);
+  background: rgba(255, 255, 255, 0.541);
   padding-top: 1rem;
   padding-bottom: 2rem;
   margin-inline: auto;
   position: relative;
   z-index: 2;
   border-radius: 1rem;
-  overflow: hidden;
-  margin-top: 8rem;
+  
+  margin-top: 1rem;
 }
 .signin {
   text-align: center;
@@ -62,16 +79,22 @@ h2 {
   font-size: 2rem;
   color: #4b494a;
 }
+
+.btn-container{
+  width: 100%;
+  text-align: center;
+ 
+}
 .btn-sign {
-  max-width: 20rem;
+  width: 80%;
   padding: 1rem 3rem;
-  transform: translate(100%);
   border: none;
   border-radius: 0.5rem;
   color: white;
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  cursor: pointer;
   background-color: #c80962;
 }
 
@@ -99,9 +122,9 @@ input {
 
 .back {
   width: 100%;
+ padding-bottom: 6rem;
   position: relative;
   margin: 0 auto;
-  padding: 0;
   overflow-y: hidden;
   background: url("~/assets/photos/myimage.jpg");
   background-size: cover;
